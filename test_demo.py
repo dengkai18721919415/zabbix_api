@@ -97,7 +97,10 @@ calss zabbixtools:
             res = res['result']
             if (res !=0) or (len(res) != 0):
                 print "\033[1;32;40m%s\033[0m" % "Number Of Hosts: ","\033[1;31;40m%d\033[0m" % len(res)
-                    
+                for host in res:
+                    print "Host ID:",host['hostid'],"Visible name:",host['name'],"Host-status:",host['status'],"HostName:",host['host']
+        else:
+            print "Host
                    
-                    
+                     
             
